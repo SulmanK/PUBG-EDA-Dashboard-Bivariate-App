@@ -19,7 +19,7 @@ import plotly.graph_objects as go
 
 #--------- Pandas Dataframe
 url = "https://raw.githubusercontent.com/SulmanK/PUBG-EDA-Dashboard-Univariate-App/master/data/PUBG_Player_Statistics.csv"
-orig = pd.read_csv(url)
+orig = pd.read_csv(url, 60000)
 
 ## Create a copy of the dataframe
 df = orig.copy()
